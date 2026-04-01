@@ -1,0 +1,440 @@
+def fibonacci(n):
+    """Return the nth Fibonacci number using dynamic programming."""
+
+def binary_search(arr, target):
+    """Search for target in sorted array arr. Return index or -1."""
+
+def merge_sort(arr):
+    """Sort arr in-place using merge sort. Return sorted list."""
+
+def is_palindrome(s):
+    """Return True if string s is a palindrome, ignoring case and spaces."""
+
+def longest_common_subsequence(s1, s2):
+    """Return the length of the longest common subsequence of s1 and s2."""
+
+def two_sum(nums, target):
+    """Given a list of integers, return indices of two numbers that sum to target."""
+
+def valid_parentheses(s):
+    """Return True if the string s has valid balanced parentheses."""
+
+def reverse_linked_list(head):
+    """Reverse a singly linked list in place. Return the new head."""
+
+def max_subarray_sum(nums):
+    """Find the contiguous subarray with the maximum sum using Kadane's algorithm."""
+
+def level_order_traversal(root):
+    """Return the level-order (BFS) traversal of a binary tree as a list of lists."""
+
+class LRUCache:
+    """Implement an LRU cache with O(1) get and put using a doubly linked list and dict."""
+
+def count_islands(grid):
+    """Count the number of islands in a 2D grid of '1's and '0's using DFS."""
+
+def word_break(s, word_dict):
+    """Return True if string s can be segmented into words from word_dict."""
+
+def coin_change(coins, amount):
+    """Return the minimum number of coins to make amount, or -1 if impossible."""
+
+def top_k_frequent(nums, k):
+    """Return the k most frequent elements in nums using a heap."""
+
+def serialize_tree(root):
+    """Serialize a binary tree to a string using pre-order traversal."""
+
+def deserialize_tree(data):
+    """Deserialize a string produced by serialize_tree back into a binary tree."""
+
+def kth_largest(nums, k):
+    """Find the kth largest element in an unsorted array in O(n) average time."""
+
+def group_anagrams(strs):
+    """Group a list of strings into lists of anagrams."""
+
+def decode_ways(s):
+    """Count the number of ways to decode a digit string into letters (A=1, Z=26)."""
+
+def max_product_subarray(nums):
+    """Find the subarray with the maximum product."""
+
+def unique_paths(m, n):
+    """Count unique paths in an m×n grid from top-left to bottom-right."""
+
+def climb_stairs(n):
+    """Count distinct ways to climb n stairs taking 1 or 2 steps at a time."""
+
+def rotate_image(matrix):
+    """Rotate an n×n matrix 90 degrees clockwise in place."""
+
+def set_matrix_zeroes(matrix):
+    """Set entire row and column to 0 if an element is 0, in place."""
+
+def spiral_order(matrix):
+    """Return elements of a matrix in spiral order."""
+
+def search_rotated_array(nums, target):
+    """Search target in a rotated sorted array. Return index or -1."""
+
+def find_minimum_in_rotated_array(nums):
+    """Find the minimum element in a rotated sorted array."""
+
+def trapping_rain_water(height):
+    """Calculate total trapped rainwater between bars of given heights."""
+
+def container_with_most_water(height):
+    """Find two lines that form a container holding the most water."""
+
+def longest_palindromic_substring(s):
+    """Return the longest palindromic substring of s using expand-around-center."""
+
+def edit_distance(word1, word2):
+    """Return the minimum edit distance (Levenshtein) between word1 and word2."""
+
+def regular_expression_matching(s, p):
+    """Implement regex matching with '.' and '*' using dynamic programming."""
+
+def jump_game(nums):
+    """Return True if you can reach the last index from the first."""
+
+def gas_station(gas, cost):
+    """Find the starting gas station index to complete a circular route."""
+
+def candy(ratings):
+    """Minimum candies to distribute to children with higher rating than neighbor."""
+
+def sliding_window_maximum(nums, k):
+    """Return the maximum value in each sliding window of size k."""
+
+def minimum_window_substring(s, t):
+    """Find the minimum window in s that contains all characters of t."""
+
+def longest_substring_without_repeating(s):
+    """Return the length of the longest substring without repeating characters."""
+
+def find_all_anagrams(s, p):
+    """Return all start indices of p's anagrams in s."""
+
+def product_of_array_except_self(nums):
+    """Return an array where each element is the product of all other elements."""
+
+def subarray_sum_equals_k(nums, k):
+    """Count subarrays that sum to k using a prefix sum hash map."""
+
+def number_of_1_bits(n):
+    """Count the number of 1 bits in a 32-bit integer."""
+
+def reverse_bits(n):
+    """Reverse bits of a 32-bit unsigned integer."""
+
+def single_number(nums):
+    """Find the element that appears once; all others appear twice. Use XOR."""
+
+def missing_number(nums):
+    """Find the missing number in [0..n] using XOR or Gauss formula."""
+
+def hamming_distance(x, y):
+    """Return the Hamming distance (number of differing bits) between x and y."""
+
+def num_set_bits(n):
+    """Count bits set to 1 using Brian Kernighan's algorithm."""
+
+def power_of_two(n):
+    """Return True if n is a power of two."""
+
+def sqrt_integer(x):
+    """Compute integer square root of x without using built-in sqrt."""
+
+def excel_column_number(s):
+    """Convert an Excel column title (e.g. 'AB') to its column number."""
+
+def roman_to_integer(s):
+    """Convert a Roman numeral string to an integer."""
+
+def valid_sudoku(board):
+    """Determine if a 9x9 Sudoku board is valid."""
+
+def word_search(board, word):
+    """Return True if word exists in the 2D letter grid using DFS backtracking."""
+
+def n_queens(n):
+    """Return all distinct solutions to the N-Queens puzzle."""
+
+def permutations(nums):
+    """Return all permutations of a list of distinct integers."""
+
+def subsets(nums):
+    """Return all subsets (power set) of a list of distinct integers."""
+
+def combination_sum(candidates, target):
+    """Find all combinations in candidates that sum to target (can reuse elements)."""
+
+def letter_combinations(digits):
+    """Return all phone keypad letter combinations for a digit string."""
+
+def generate_parentheses(n):
+    """Generate all valid combinations of n pairs of parentheses."""
+
+def sudoku_solver(board):
+    """Solve a Sudoku puzzle by filling in empty cells using backtracking."""
+
+def word_ladder(begin_word, end_word, word_list):
+    """Return the length of the shortest transformation sequence using BFS."""
+
+def course_schedule(num_courses, prerequisites):
+    """Return True if all courses can be finished (cycle detection in directed graph)."""
+
+def number_of_connected_components(n, edges):
+    """Count connected components in an undirected graph using Union-Find."""
+
+def alien_dictionary(words):
+    """Return the order of characters in an alien language from sorted words."""
+
+def minimum_spanning_tree(n, edges):
+    """Find MST weight using Kruskal's algorithm."""
+
+def dijkstra(graph, source):
+    """Single-source shortest path using Dijkstra's algorithm with a priority queue."""
+
+def topological_sort(n, edges):
+    """Return topological ordering of n nodes with given directed edges (Kahn's BFS)."""
+
+def critical_connections(n, connections):
+    """Find all bridges in an undirected graph using Tarjan's algorithm."""
+
+def implement_trie():
+    """Implement a Trie (prefix tree) with insert, search, and startsWith methods."""
+
+class MedianFinder:
+    """Find the median from a data stream using two heaps."""
+
+def find_median_sorted_arrays(nums1, nums2):
+    """Find the median of two sorted arrays in O(log(min(m,n))) time."""
+
+def regex_matching_nfa(pattern, text):
+    """Match a regex pattern with '.' and '*' using NFA simulation."""
+
+def lfu_cache(capacity):
+    """Implement a Least Frequently Used cache with O(1) all operations."""
+
+def design_twitter():
+    """Design a simplified Twitter with postTweet and getNewsFeed."""
+
+def range_sum_query(nums):
+    """Implement a Fenwick tree (BIT) for range sum queries with point updates."""
+
+def kth_smallest_in_bst(root, k):
+    """Return the kth smallest value in a BST using in-order traversal."""
+
+def construct_bst_from_preorder(preorder):
+    """Reconstruct a BST from its preorder traversal."""
+
+def lowest_common_ancestor(root, p, q):
+    """Find the lowest common ancestor of nodes p and q in a binary tree."""
+
+def diameter_of_binary_tree(root):
+    """Return the diameter (longest path between any two nodes) of a binary tree."""
+
+def path_sum(root, target_sum):
+    """Return all root-to-leaf paths in a tree that sum to target_sum."""
+
+def serialize_deserialize_tree(root):
+    """Serialize/deserialize a binary tree to/from a compact string format."""
+
+def flatten_tree_to_linked_list(root):
+    """Flatten a binary tree to a linked list in-place (pre-order)."""
+
+def populating_next_right_pointers(root):
+    """Populate next right pointers in a perfect binary tree using O(1) space."""
+
+def recover_bst(root):
+    """Recover a BST where two nodes were swapped, without extra space."""
+
+def sum_root_to_leaf_numbers(root):
+    """Sum of all numbers formed by root-to-leaf paths in a binary tree."""
+
+def count_complete_tree_nodes(root):
+    """Count nodes in a complete binary tree in O(log^2 n) time."""
+
+def verify_preorder_bst(preorder):
+    """Verify that a sequence is a valid BST preorder traversal using a stack."""
+
+def zigzag_level_order(root):
+    """Return zigzag level order traversal of a binary tree."""
+
+def right_side_view(root):
+    """Return the values visible from the right side of a binary tree."""
+
+def implement_stack_using_queues():
+    """Implement a stack using two queues."""
+
+def implement_queue_using_stacks():
+    """Implement a queue using two stacks."""
+
+def evaluate_reverse_polish_notation(tokens):
+    """Evaluate an arithmetic expression in Reverse Polish Notation."""
+
+def basic_calculator(s):
+    """Evaluate a basic arithmetic expression string with +, -, (, )."""
+
+def decode_string(s):
+    """Decode an encoded string like '3[a2[c]]' to 'accaccacc'."""
+
+def daily_temperatures(temperatures):
+    """For each day, return how many days until a warmer temperature (monotonic stack)."""
+
+def largest_rectangle_in_histogram(heights):
+    """Find the largest rectangle area in a histogram using a stack."""
+
+def maximal_rectangle(matrix):
+    """Find the largest rectangle of 1s in a binary matrix."""
+
+def next_greater_element(nums1, nums2):
+    """For each element in nums1, find the next greater element in nums2."""
+
+def asteroid_collision(asteroids):
+    """Simulate asteroid collisions; return surviving asteroids."""
+
+def remove_k_digits(num, k):
+    """Remove k digits to get the smallest possible number."""
+
+def132_pattern(nums):
+    """Return True if there exists a 132 pattern in nums."""
+
+def sliding_window_max_deque(nums, k):
+    """Maximum of each sliding window using a monotonic deque."""
+
+def find_duplicate_number(nums):
+    """Find the duplicate in [1..n+1] array without modifying it (Floyd's cycle)."""
+
+def first_missing_positive(nums):
+    """Find the smallest missing positive integer in O(n) time O(1) space."""
+
+def sort_colors(nums):
+    """Sort array of 0s, 1s, 2s in place (Dutch National Flag)."""
+
+def wiggle_sort(nums):
+    """Rearrange array so nums[0] <= nums[1] >= nums[2] <= nums[3]..."""
+
+def count_smaller_after_self(nums):
+    """For each element, count how many elements to its right are smaller (BIT/merge)."""
+
+def reverse_pairs(nums):
+    """Count reverse pairs (i < j, nums[i] > 2*nums[j]) using merge sort."""
+
+def max_points_on_line(points):
+    """Find the maximum number of points on a single line."""
+
+def fraction_to_recurring_decimal(numerator, denominator):
+    """Convert fraction to decimal string; mark repeating part with parentheses."""
+
+def excel_sheet_column_title(n):
+    """Convert column number to Excel title (1->'A', 28->'AB')."""
+
+def happy_number(n):
+    """Return True if n is a happy number (repeated digit-square sum reaches 1)."""
+
+def count_primes(n):
+    """Count primes less than n using the Sieve of Eratosthenes."""
+
+def ugly_number(n):
+    """Return the nth ugly number (only prime factors 2, 3, 5)."""
+
+def super_ugly_number(n, primes):
+    """Return the nth super ugly number given a list of prime factors."""
+
+def largest_divisible_subset(nums):
+    """Return the largest subset where every pair is divisible by the other."""
+
+def perfect_squares(n):
+    """Return the minimum number of perfect square numbers summing to n."""
+
+def k_closest_points_to_origin(points, k):
+    """Return the k closest points to the origin."""
+
+def task_scheduler(tasks, n):
+    """Minimum intervals to execute tasks with cooling period n."""
+
+def reorganize_string(s):
+    """Rearrange characters so no two adjacent chars are the same; use heap."""
+
+def minimum_cost_to_connect_sticks(sticks):
+    """Find minimum cost to connect all sticks (Huffman coding variant)."""
+
+def find_kth_largest_stream(k):
+    """Design a class to find the kth largest element in a stream."""
+
+def merge_k_sorted_lists(lists):
+    """Merge k sorted linked lists into one sorted list using a heap."""
+
+def sort_list(head):
+    """Sort a linked list in O(n log n) time using merge sort."""
+
+def intersection_of_two_linked_lists(headA, headB):
+    """Find the node at which two linked lists intersect."""
+
+def copy_list_with_random_pointer(head):
+    """Deep copy a linked list where each node has a random pointer."""
+
+def rotate_list(head, k):
+    """Rotate a linked list to the right by k places."""
+
+def partition_list(head, x):
+    """Partition list so nodes < x come before nodes >= x."""
+
+def remove_duplicates_from_sorted_list_ii(head):
+    """Remove all nodes with values that appear more than once."""
+
+def odd_even_linked_list(head):
+    """Group odd-indexed nodes followed by even-indexed nodes."""
+
+def reorder_list(head):
+    """Reorder list L0→Ln→L1→Ln-1→L2→Ln-2 in place."""
+
+def swap_pairs(head):
+    """Swap every two adjacent nodes in a linked list."""
+
+def reverse_nodes_in_k_group(head, k):
+    """Reverse nodes of a linked list k at a time."""
+
+def delete_node_without_head(node):
+    """Delete a node in a linked list given only access to that node."""
+
+def palindrome_linked_list(head):
+    """Check if a linked list is a palindrome in O(n) time O(1) space."""
+
+class MinStack:
+    """Stack that supports push, pop, top, and getMin in O(1)."""
+
+def implement_hash_map():
+    """Implement a hash map from scratch using open addressing or chaining."""
+
+def design_hit_counter():
+    """Count hits received in the past 5 minutes; each call comes in order."""
+
+def time_based_key_value_store():
+    """Key-value store with timestamps; get returns value at or before timestamp."""
+
+def design_search_autocomplete():
+    """Implement autocomplete using a Trie with top-3 suggestions per prefix."""
+
+def word_squares(words):
+    """Find all word squares from a given list of words (Trie + backtracking)."""
+
+def palindrome_pairs(words):
+    """Find all (i, j) pairs where words[i] + words[j] forms a palindrome."""
+
+def stream_of_characters(words):
+    """Given a stream of characters, check if any suffix matches a word list."""
+
+def concatenated_words(words):
+    """Find all words that are concatenations of other words in the list."""
+
+def maximum_xor_of_two_numbers(nums):
+    """Find the maximum XOR of any two numbers in nums using a bitwise Trie."""
+
+def find_median_from_data_stream():
+    """Streaming median using two heaps (max-heap for lower half, min for upper)."""

@@ -145,3 +145,8 @@ poetry.toml
 /.windsurf/
 # emscripten
 a.out.*
+
+# moe-inspector generated outputs
+tools/moe-inspector/out/
+tools/moe-inspector/data/code_routing.jsonl
+tools/moe-inspector/data/nl_routing.jsonl
