@@ -12,7 +12,7 @@
 #include <string>
 #include <vector>
 
-static void print_usage(const char * prog) {
+static void print_usage(int /*argc*/, char ** argv) {
     fprintf(stderr,
         "usage: %s [llama-options] --moe-log FILE --moe-domain DOMAIN\n"
         "\n"
@@ -24,7 +24,7 @@ static void print_usage(const char * prog) {
         "\n"
         "All standard llama-cli options are accepted (-m, -p, -f, -n, --temp, etc.).\n"
         "Recommended: --temp 0 --seed 42 for reproducible captures.\n",
-        prog);
+        argv[0]);
 }
 
 // Read entire file into a string.
@@ -52,7 +52,7 @@ int main(int argc, char ** argv) {
         } else if ((strcmp(argv[i], "--moe-domain") == 0) && i + 1 < argc) {
             moe_domain = argv[++i];
         } else if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0) {
-            print_usage(argv[0]);
+            print_usage(argc, argv);
             return 0;
         } else {
             fwd_argv.push_back(argv[i]);
@@ -61,7 +61,7 @@ int main(int argc, char ** argv) {
 
     if (moe_log_path.empty() || moe_domain.empty()) {
         fprintf(stderr, "error: --moe-log and --moe-domain are required\n\n");
-        print_usage(argv[0]);
+        print_usage(argc, argv);
         return 1;
     }
 
@@ -156,7 +156,7 @@ int main(int argc, char ** argv) {
         if (new_token == id_eos) break;
         if (n_past >= n_ctx) break;
 
-        llama_batch_clear(batch);
+        common_batch_clear(batch);
         common_batch_add(batch, new_token, n_past, {0}, true);
 
         // update capture state for this single-token batch
