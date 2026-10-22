@@ -808,7 +808,7 @@ static void common_params_fit_impl(
         }
 
         // try to fit at least part of one more layer
-        if (ngl_per_device[id_dense_start].n_layer > (id < nd - 1 ? 0 : 1)) {
+        if (ngl_per_device[id_dense_start].n_part > 0 && ngl_per_device[id_dense_start].n_layer > (id_dense_start < nd - 1 ? 0 : 1)) {
             std::vector<ngl_t> ngl_per_device_test = ngl_per_device;
             size_t id_dense_start_test = id_dense_start;
             ngl_per_device_test[id_dense_start_test].n_layer--;
